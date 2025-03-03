@@ -31,4 +31,4 @@ async function askGrokX(question: string) {
     }
 }
 
-askGrokX("How much is 2 + 2?").then(console.log);
+askGrokX("How much is 2 + 2 ?").then(console.log);
