@@ -16,7 +16,7 @@ class GoogleStorageUploader:
         return credentials.token
 
     def upload_file(self, file_path, destination_blob_name):
-        url = f"https://storage.googleapis.com/upload/storage/v1/b/{self.bucket_name}/o"
+        url = f"https://storage.googleapis.com/storage/upload/v1/b/{self.bucket_name}/o"
         headers = {"Authorization": f"Bearer {self.access_token}"}
         params = {"uploadType": "media", "name": destination_blob_name}
 
